@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(src/fonts/Poppins-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(src/fonts/Poppins-Regular.woff2);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(src/fonts/Poppins-Medium.woff2);
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url(src/fonts/nunito-bold.woff2);
+}
+
+@media (max-width: 390px) {
+    .header__logo {
+        padding: none;
+    }
+  }
+
+.page__background {
+    background-color: rgba(32, 3, 59, 1);
+    background-image: url(src/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.page___fadein-animation {
+    opacity: 1;
+    animation: fadein_anim 1.5s ease 0s 1 normal forwards;;
+}
+
+
+@keyframes fadein_anim {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.page__overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.392), rgba(255, 255, 255, 0.058));
+    height: 100vh;
+    width: auto;
+}
+
+.header___sizes {
+    height: 65px;
+    width: auto;
+}
+
+
+.header___animation {
+    width: 100%;
+    animation: header_animation 2s ease 0s 1 normal forwards;
+}
+
+@keyframes header_animation {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.header__logo {
+    padding: 30px 0 0 3vw;
+}
+
+.header__underline {
+    height: 0.2vh;
+    width: auto;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.719) 0%, rgba(0,0,0,0) 50%);
+}
+
+.main___sizes {
+    padding: 15vh 0 0 3vw;
+}
+
+h1 {
+    font-family: Poppins-ExtraBold;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+p {
+    display: flex;
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    max-height: 135px;
+    max-width: 510px;
+    white-space: 3px;
+    padding-bottom: 20px;
+}
+
+.main__button {
+    background-color: rgba(96, 0, 185, 1);
+    border: none;
+    border-radius: 5px;
+    font-family: Poppins-Medium;
+    font-size: 20px;
+    white-space: 3px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.main__button:hover {
+    background-color: rgb(153, 45, 255);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.384);
+}
+
+.footer___sizes {
+    position: absolute;
+    bottom: 70px;
+    overflow: hidden;
+    padding-left: 3vw;
+}
+
+.footer__flex {
+    display: flex;
+    gap: 10px;
+}
+
+h6 {
+    font-family: nunito-bold;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+
+
+li:nth-child(2) {
+    padding: 0 3px 0 3px;
+}
+
+li {
+    display: inline;
+}
